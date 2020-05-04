@@ -1,7 +1,22 @@
-    # if letter != dict[dict_word][dict_letter_count]
-    #   dict_letter_count = 0
-    #   nil
-    # elsif letter == dict[dict_word][dict_letter_count]
-    #   dict_letter_count += 1
-    #   letter
-    # end
+def substrings (text, words)
+#     match = Hash.new(0)
+    
+#     print text.split
+
+#     text.split.each do |t|
+#         puts t
+#         words.each do |word|
+#             match[word] += 1 if t.downcase.include?(word.downcase)
+#         end
+#     end
+#     puts match
+# end
+
+
+
+# dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
+
+# substrings("below", dictionary)
+
+# substrings("Howdy partner, sit down! How's it going?", dictionary)
+

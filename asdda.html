@@ -1,0 +1,225 @@
+<link
+  href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap"
+  rel="stylesheet"
+/>
+
+<div class="outer-c">
+  <div class="row">
+    <div class="top-container">
+      <div class="col-xs-12">
+        <h1 class="title">How would you like to service your vehicle?</h1>
+      </div>
+      <div class="outer-button-cont text-center center-block">
+        <div class="button_cont text-center col-xs-12 col-md-6">
+          <a
+            class="example_b example_d-button"
+            href="/concierge-valet"
+            target="_blank"
+            rel="nofollow noopener"
+            >Valet Pickup
+            <span style="font-weight: 700; color: #0276b3;">AT-HOME </span>
+            <br /><span
+              style="font-weight: 700; margin-left: 5px; margin-right: 5px;"
+              >Complimentary</span
+            >
+            <img
+              style="width: 40px;"
+              src="https://d2v1gjawtegg5z.cloudfront.net/uploads/files/000/059/006/original/home.png?1585168175"
+              alt="car"
+          /></a>
+        </div>
+        <div class="button_cont text-center col-xs-12 col-md-6">
+          <a
+            class="example_r example_d-button"
+            href="/schedule-service"
+            target="_blank"
+            rel="nofollow noopener"
+            >Bring your Vehicle to
+            <span style="font-weight: 700; color: #65a9ff;">DEALERSHIP</span>
+            <img
+              style="width: 40px; margin-left: 15px; margin-right: 5px;"
+              src="https://d2v1gjawtegg5z.cloudfront.net/uploads/files/000/059/005/original/dealer.png?1585168161"
+              alt="hand-car"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .outer-button-cont {
+    margin-top: 50px;
+  }
+
+  .button_cont {
+    justify-content: center;
+    display: flex;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: none !important;
+  }
+
+  .example_d-button {
+    width: 440px;
+    margin: 15px;
+  }
+
+  .example_b {
+    color: #fff !important;
+    background: none;
+    font-size: 20px;
+    padding: 14px;
+    border: 2px solid #fff !important;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 400;
+    transition: all 0.3s ease 0s;
+  }
+
+  .example_r {
+    color: #fff !important;
+    background: none;
+    font-size: 20px;
+    padding: 14px;
+    border: 2px solid #fff !important;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 400;
+    transition: all 0.3s ease 0s;
+  }
+
+  .example_b:hover {
+    border-radius: 50px;
+    border-color: #0276b3 !important;
+    transition: all 0.3s ease 0s;
+  }
+
+  .example_r:hover {
+    border-radius: 50px;
+    border-color: #65a9ff !important;
+    transition: all 0.3s ease 0s;
+  }
+
+  .tinier {
+    display: block;
+    margin: auto;
+    max-width: 300px;
+    width: auto;
+  }
+
+  .top-container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #3c3c3cd1;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+  }
+
+  h1.title {
+    text-align: center;
+    font-family: "Playfair Display";
+    color: #fff;
+    font-size: 4em;
+  }
+
+  .main-text {
+    font-size: 35px;
+    font-family: "Playfair Display", serif;
+    text-align: left;
+    font-weight: 400;
+    opacity: 1;
+  }
+
+  .sub-text {
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    text-align: left;
+    font-weight: 400;
+    font-style: italic;
+    font-variant: normal;
+    letter-spacing: 0.5px;
+    opacity: 1;
+  }
+  .outer-c {
+    background-image: url(https://d2v1gjawtegg5z.cloudfront.net/uploads/files/000/058/574/original/16899_Telluride_Grille.jpg?1584991223);
+  }
+
+  .arrow-section {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 100px;
+  }
+
+  .arrow {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    width: 75px;
+  }
+
+  .arrow-bounce {
+    animation-name: bounce-2;
+    animation-timing-function: cubic-bezier(0, 0, 0.54, 1.4);
+  }
+  @keyframes bounce-2 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-25px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .arrow:hover {
+    opacity: 0.5;
+    transition: opacity 0.25s ease-in-out;
+  }
+
+  @media (min-width: 768px) {
+    .example_d {
+      font-size: 24px;
+    }
+  }
+  @media (max-width: 500px) {
+    .example_d-button {
+      width: 280px;
+      height: 130px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .top-container {
+      height: 75vh;
+    }
+  }
+  @media (max-width: 500px) {
+    .example_b {
+      padding: 32px;
+    }
+    h1.title {
+      font-size: 3em;
+    }
+  }
+</style>
+
+<script>
+  $(document).ready(function () {
+    /* scrolling */
+    $("img.arrow").click(function () {
+      $("html,body").animate(
+        {
+          scrollTop:
+            $(".empty-div").offset().top - $(".search-header").height(),
+        },
+        1000
+      );
+    });
+  });
+</script>

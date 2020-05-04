@@ -13,11 +13,11 @@ def substrings(input, dict)
     
     # 3rd loop comparing the split input array to each letter in the dictionary word. 
     # If input letter is not equal to dictionary letter, then keep comparing input letter to the first letter of the dictionary word
-    substring = input_w.chars.map.with_index do |letter, i|
+    substring = input_w.chars.map do |letter|
         if letter != dict_word[dict_letter_count]
           dict_letter_count = 0
           nil
-        elsif letter == dict_word[dict_letter_count]
+        else
           dict_letter_count += 1
           letter
         end
