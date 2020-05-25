@@ -4,6 +4,7 @@ dictionary = %w[below down go going horn how howdy it i low own part partner sit
 
 def substrings(user_input, dict)
   hash = {}
+  print user_input.downcase.split
   user_input.downcase.split.each do |input|
     dict.each do |word|
       if input.match(word) && hash.key?(word)

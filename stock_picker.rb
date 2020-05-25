@@ -18,6 +18,6 @@ def stock_picker(stocks)
   p array
 end
 
-stock_list = [17, 3, 6, 9, 8, 15, 6, 1, 10]
+stock_list = [17, 3, 6, 7, 3, 9, 8, 15, 6, 1, 13]
 
 stock_picker(stock_list)
