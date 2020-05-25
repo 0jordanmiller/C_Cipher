@@ -1,1 +1,0 @@
-  stocks = stocks.reverse
